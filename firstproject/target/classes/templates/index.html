@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PoetSphere</title>
+  <link rel="stylesheet" href="" th:href="@{/css/style.css}" />
+</head>
+
+<body>
+
+  <h1 style="color: rgb(143, 227, 245)" align="center">kavyasparsh</h1>
+  <p style="color: rgb(91, 51, 236)" align="center">
+    Express your emotions: Share how the poetry made you feel, such as moved, touched, inspired
+  </p>
+  <center>
+    <div class="container">
+      <div class="title">Registration</div>
+      <div class="content">
+  </center>
+  <center>
+    <form action="/home" method="post" class="form">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">User Name</span>
+          <input type="text" placeholder="Enter your name" name="name" value="" required>
+        </div>
+       
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" placeholder="Enter your email" name="email" value="" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Phone Number</span>
+          <input type="text" placeholder="Enter your number" name="contact" value="">
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input type="text" placeholder="Enter your password" name="password" value="">
+        </div>
+        
+      </div>
+      <div class="gender-details">
+        <input type="radio" name="gender" id="dot-1">
+        <input type="radio" name="gender" id="dot-2">
+        
+        <span class="gender-title">Gender</span>
+        <div class="category">
+          <label for="dot-1">
+          <span class="dot one"></span>
+          <span class="gender">Male</span>
+        </label>
+        <label for="dot-2">
+          <span class="dot two"></span>
+          <span class="gender">Female</span>
+        </label>
+        
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Register">
+      </div>
+      <p class="signup">
+        Already have an account?
+        <a href="login">Login here</a>
+      </p>
+      
+    </form>
+  </div>
+</div>
+  </center>
+  <!-- javascript -->
+<script src=""  th:src="@{/js/myjs.js}"></script>
+
+</body>
+
+</html>
